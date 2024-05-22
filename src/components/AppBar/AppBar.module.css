@@ -1,0 +1,6 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    align-items: center;
+}
