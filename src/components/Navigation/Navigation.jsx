@@ -6,8 +6,8 @@ const Navigation = () => {
     return (
         <div className>
             <nav className={css.nav}>
-                <NavLink className to="/">Home</NavLink>
-                <NavLink className to="/contacts">Contacts</NavLink>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/contacts">Contacts</NavLink>
             </nav>
         </div>
     )
