@@ -18,7 +18,7 @@ const registerSchema = Yup.object().shape({
     password: Yup
         .string()
         .min(3, "The password is too Short!")
-        .max(15, "The password is too Long!")
+        .max(30, "The password is too Long!")
         .required("Password is required"),
 });
 

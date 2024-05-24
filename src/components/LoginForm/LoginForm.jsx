@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import css from './LoginForm.module.css'
 import * as Yup from 'yup'
+import toast from 'react-hot-toast';
+
 
 const userSchema = Yup.object().shape({
     email: Yup
@@ -24,8 +26,12 @@ const LoginForm = () => {
     const passwordFieldId = useId();
 
     const handleSubmit = (values, actions) => {
-        console.log(values);
-        dispatch(logIn(values));
+        dispatch(logIn(values))
+            .unwrap()
+            .then((data) => {
+                toast.success(`Welcome back, ${data.user.name}!`);
+            })
+            .catch();
         actions.resetForm();
     };
 

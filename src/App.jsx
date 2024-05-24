@@ -1,6 +1,5 @@
 import {Suspense, useEffect, lazy} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchContacts } from './redux/contactsOps';
 
 import Layout from './components/Layout/Layout';
 import { Routes, Route } from 'react-router-dom';
