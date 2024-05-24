@@ -1,12 +1,12 @@
 .formSection {
     display: flex;
     flex-direction: column;
-    margin-right: auto;
+    margin: 20px auto;
     width: 300px;
     border: 2px solid rgb(121, 120, 120);
     border-radius: 5px;
     padding: 10px;
-    margin-top: 20px;
+    
 }
 
 .formLabel {

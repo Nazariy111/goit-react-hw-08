@@ -1,8 +1,10 @@
-
+import css from './HomePage.module.css'
 
 const HomePage = () => {
     return (
-        <div>HOMEPAGE</div>
+        <div className={css.wrapper}>
+            HOMEPAGE
+        </div>
     )
 }
 

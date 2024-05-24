@@ -1,3 +1,29 @@
 .wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userWelcome {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color:blueviolet;
+}
+
+.logoutButton {
+    padding: 5px;
+    margin: 10px auto 0 auto;
+    border: 1px solid grey;
+    max-width: max-content;
+    border-radius: 5px;
+    margin-left: 10px;
+
+
+}
+
+.logoutButton:hover,
+.logoutButton:focus {
+    border-color: black;
+    background-color: rgb(238, 233, 233);
 }
