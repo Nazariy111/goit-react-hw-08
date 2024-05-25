@@ -41,6 +41,9 @@ const authSlice = createSlice({
             state.isLoggedIn = true;
             state.isRefreshing = false;
         })
+        .addCase(refreshUser.rejected, (state) => {
+            state.isRefreshing = false;
+        })
 });
 
 const authReducer = authSlice.reducer;

@@ -9,7 +9,7 @@ const registerSchema = Yup.object().shape({
     name: Yup
         .string()
         .min(3, "This name is too Short!")
-        .max(50, "This name is too Long!")
+        .max(30, "This name is too Long!")
         .required("Name is required"),
     email: Yup
         .string()
@@ -17,7 +17,7 @@ const registerSchema = Yup.object().shape({
         .required('Email is required'),
     password: Yup
         .string()
-        .min(3, "The password is too Short!")
+        .min(7, "The password is too Short!")
         .max(30, "The password is too Long!")
         .required("Password is required"),
 });

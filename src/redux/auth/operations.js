@@ -8,6 +8,7 @@ axios.defaults.baseURL = "https://connections-api.herokuapp.com";
 
 export const register = createAsyncThunk("auth/register", async (newUser, thunkAPI) => { 
     try {
+        
         const response = await axios.post("/users/signup", newUser);
         setAuthHeader(response.data.token);
         return response.data;
